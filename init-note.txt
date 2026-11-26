@@ -1,0 +1,18 @@
+REACT + VITE STARTUP GUIDE
+
+Create the project
+   npm create vite@latest react-experiment
+
+   Options:
+   - Framework: React
+   - Variant: TypeScript
+     "TypeScript + React Compiler" hides re-render behavior, so I omit when learning.
+
+
+3. Start the dev server
+   npm run dev
+     Why: runs the app at http://localhost:5173 with instant updates on save.
+
+4. Before committing or sharing
+   - Keep package-lock.json.
+   - Run npm audit occasionally.
