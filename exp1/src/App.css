@@ -1,0 +1,60 @@
+.layout { 
+  display: flex; 
+  height: 100vh; 
+  background: lightblue;
+}
+.sidebar {
+  width: 150px; 
+  border-right: 1px solid #ddd;
+  padding: 12px;
+  background: rgb(60, 60, 60);
+}
+
+.sidebar button {
+  width: 100%;
+}
+
+.chat {
+  flex: 1; 
+  display: flex;
+  flex-direction: column; 
+  background: rgb(38, 38, 38);
+  color:#ddd;
+}
+
+.messages { 
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bubble {
+  max-width: 70%;
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+.bubble.user {
+  align-self: flex-end;
+}
+
+.bubble.assistant {
+  align-self: flex-start;
+}
+
+.composer {
+  display: flex;
+  padding: 16px;
+  background: transparent;
+}
+
+.composer input {
+  flex: 1;
+}
+
+.composer button {
+  padding: 0 16px;
+  border: none;
+}
